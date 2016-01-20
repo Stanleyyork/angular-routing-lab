@@ -1,2 +1,6 @@
 <h1>Welcome to the Books Index Page!</h1>
-<h2>{{booksIndexTest}}</h2>
+<div class="row" ng-repeat="book in allBooks">
+	<h3>{{book.title}}</h3>
+	<p>{{book.author}} / {{book.releaseDate}}</p>
+	<p><a ng-href="books/{{book._id}}">More Details</a></p>
+</div>
